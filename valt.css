@@ -1,0 +1,42 @@
+ body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #f1f1f1;
+            overflow-x: hidden;
+            /* A subtle, animated background gradient */
+            background: radial-gradient(circle at 15% 50%, rgba(97, 218, 251, 0.1), transparent 50%),
+                        radial-gradient(circle at 85% 50%, rgba(255, 255, 255, 0.05), transparent 50%),
+                        linear-gradient(135deg, #1f2734, #121921);
+            background-size: 200% 200%;
+            animation: backgroundShift 20s ease infinite;
+            scroll-behavior: smooth;
+        }
+        @keyframes backgroundShift {
+            0% { background-position: 0% 50%, 100% 50%; }
+            50% { background-position: 100% 50%, 0% 50%; }
+            100% { background-position: 0% 50%, 100% 50%; }
+        }
+        .header {
+            background-color: rgba(13, 17, 23, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        /* Custom card styling with a glowing border */
+        .enhanced-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            background-origin: border-box;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), 
+                              linear-gradient(45deg, #61dafb, #007bff, #ff6b6b);
+            animation: borderGlow 6s infinite alternate;
+        }
+        @keyframes borderGlow {
+            0% { box-shadow: 0 0 15px #61dafb; }
+            50% { box-shadow: 0 0 30px #ff6b6b; }
+            100% { box-shadow: 0 0 15px #007bff; }
+        }
+        /* In your valt.css or inside <style> */
+.scale-100 {
+  transform: scale(1) !important;
+}
