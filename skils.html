@@ -13,23 +13,75 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="valt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a; /* Dark background */
+            color: #e0e0e0;
+        }
+        .enhanced-card {
+            background-color: rgba(17, 24, 39, 0.8); /* Slightly transparent dark card */
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
 <body class="antialiased">
-    <!-- Header with fixed navigation -->
-    <header class="header fixed top-0 left-0 w-full z-50 py-4 shadow-xl border-b border-gray-700">
-        <nav class="container mx-auto flex justify-between items-center px-4 md:px-8">
-            <h1 class="text-3xl font-bold text-gray-100 transition-transform duration-300 hover:scale-105">
-                Nithin <span class="text-cyan-400">Reddy</span>
-            </h1>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="index.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Home</a></li>
-                <li><a href="valt.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">About Me</a></li>
-                <li><a href="skils.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Skills</a></li>
-                <li><a href="pro.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Projects</a></li>
-                <li><a href="cont.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <!-- Experience Section -->
+    <section id="experience" class="min-h-screen flex items-center justify-center py-16 px-4">
+        <div class="enhanced-card p-12 rounded-2xl shadow-2xl text-center w-full max-w-6xl">
+            <h2 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-12">My Experience</h2>
+            
+            <!-- Experience Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Experience Item 1: Python Developer Intern -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl transition-transform duration-300 hover:translate-y-[-10px]">
+                    <i class="fab fa-python text-5xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Python Developer Intern</h3>
+                    <p class="text-gray-500 mb-4">NAVODITHA INFOTECH | Aug 2025 - Sept 2025</p>
+                    
+                    <!-- Image related to your internship -->
+                    <div class="mt-6">
+                        <img 
+                            src="novida.png" 
+                            alt="Python Developer Internship Project" 
+                            class="w-full h-48 object-cover rounded-lg shadow-md mb-2"
+                            onerror="this.src='https://placehold.co/600x400/374151/FFF?text=Image+Not+Found'"
+                        >
+                        <!-- Description *below* the photo -->
+                        <p class="text-sm text-gray-400 text-left mt-3">
+                            As a remote backend developer, I specialized in building and maintaining web applications using Django, focusing on REST API creation and database optimization. I also developed standalone Python 3 projects, including a Sentiment Analysis tool and a price_tracker. These projects heavily utilized key data analysis libraries such as NumPy and Matplotlib.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2: Data Analyst (Example) -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl transition-transform duration-300 hover:translate-y-[-10px]">
+                    <i class="fas fa-chart-line text-5xl text-cyan-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white mb-2">Web Developer</h3>
+                    <p class="text-gray-500 mb-4">Vaultofcodes| Jun 2025 - Aug 2025</p>
+                    
+                    <!-- Image related to your internship -->
+                    <div class="mt-6">
+                        <img 
+                            src="vault.png" 
+                            alt="Data Analyst Internship Project" 
+                            class="w-full h-48 object-cover rounded-lg shadow-md mb-2"
+                            onerror="this.src='https://placehold.co/600x400/374151/FFF?text=Image+Not+Found'"
+                        >
+                        <!-- Description *below* the photo -->
+                        <p class="text-sm text-gray-400 text-left mt-3">
+                            As a web developer, I possess strong skills in HTML, CSS, and JavaScript. I have applied these technologies to build various projects, including a complete product landing page and other web-based works. This experience demonstrates my ability to create responsive, visually appealing, and functional websites.
+                        </D>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Skills Section -->
         <section id="skills" class="min-h-screen flex items-center justify-center py-16 px-4">
             <div class="enhanced-card p-12 rounded-2xl shadow-2xl text-center">
@@ -69,6 +121,26 @@
                         </div>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-xl shadow-xl transition-transform duration-300 hover:translate-y-[-10px]">
+                        <i class="fas fa-database text-5xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-white mb-2">GEN AI</h3>
+                        <p class="text-gray-400">Gen Ai</p>
+                        <!-- Certificate Image -->
+                        <div class="mt-6">
+                            <img src="oracle.png" alt="Database Management Certificate" class="w-full rounded-lg shadow-md mb-2">
+                            <p class="text-sm text-gray-500">Certificate of Completion: GEN AI</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-xl transition-transform duration-300 hover:translate-y-[-10px]">
+                        <i class="fas fa-database text-5xl text-cyan-400 mb-4"></i>
+                        <h3 class="text-2xl font-semibold text-white mb-2">.Net Developer</h3>
+                        <p class="text-gray-400">c#,.net</p>
+                        <!-- Certificate Image -->
+                        <div class="mt-6">
+                            <img src="microsoft.png" alt="Database Management Certificate" class="w-full rounded-lg shadow-md mb-2">
+                            <p class="text-sm text-gray-500">Certificate of Completion: .Net Developer</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-xl transition-transform duration-300 hover:translate-y-[-10px]">
                         <i class="fas fa-lightbulb text-5xl text-cyan-400 mb-4"></i> 
                         <h3 class="text-2xl font-semibold text-white mb-2"> TCS iON Career Edge - Young Professional  </h3>
                         <p class="text-gray-400"> Communicaon Skills | resentaon Skill | Soft Skills | Career Guidance Framewor | Resume writng</p>
@@ -84,6 +156,3 @@
         <footer class="py-6 text-center text-gray-500 text-sm">
         <p>&copy; 2025 Nithin Reddy . All Rights Reserved.</p>
     </footer>
-
-        </body>
-        </html>
