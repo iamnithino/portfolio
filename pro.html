@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nithin Reddy - Portfolio</title>
+    <title>Nithin Reddy - Projects</title>
     <!-- Use the Inter font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,12 +11,13 @@
     <!-- Tailwind CSS CDN for modern, responsive styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="valt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-<body class="antialiased">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="valt.css">
+</head>
+<body class="antialiased font-['Inter',_sans-serif]">
     <!-- Header with fixed navigation -->
-    <header class="header fixed top-0 left-0 w-full z-50 py-4 shadow-xl border-b border-gray-700">
+    <header class="header fixed top-0 left-0 w-full z-50 py-4 shadow-xl border-b border-gray-800">
         <nav class="container mx-auto flex justify-between items-center px-4 md:px-8">
             <h1 class="text-3xl font-bold text-gray-100 transition-transform duration-300 hover:scale-105">
                 Nithin<span class="text-cyan-400">Reddy</span>
@@ -25,46 +26,103 @@
                 <li><a href="index.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Home</a></li>
                 <li><a href="valt.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">About Me</a></li>
                 <li><a href="skils.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Skills</a></li>
-                <li><a href="pro.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Projects</a></li>
+                <!-- Highlight the current page -->
+                <li><a href="pro.html" class="nav-link relative text-cyan-400 font-medium">Projects</a></li>
                 <li><a href="cont.html" class="nav-link relative text-gray-300 hover:text-cyan-400 transition-colors duration-300 font-medium">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Projects Section -->
-        <section id="projects" class="min-h-screen flex items-center justify-center py-16 px-4">
-            <div class="enhanced-card p-12 rounded-2xl shadow-2xl text-center">
-                <h2 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-6">Projects</h2>
-                <div class="space-y-8 mt-12">
-                    <!-- Project Item 1 -->
-                    <div class="text-left border-b-2 border-dashed border-gray-700 pb-8 last:border-none">
-                        <h3 class="text-3xl font-semibold text-white mb-2">Our Gardens</h3>
-                        <p class="text-gray-400"> <h4>  Project Description:</h4>
-The project is a website for a service called "OurGardens" under the main title "For Future." It provides an informational guide on how to create and maintain a garden, outlining a seven-step process and promoting a call to action to "Save Plants, Make Gardens."
 
-<h4>Problem it Solves:</h4>
-The project aims to solve the problem of a lack of accessible and simple guidance for individuals who want to start gardening. By providing a clear, step-by-step guide, it helps users overcome the initial hurdles of starting a garden.
-
-<h4>Technologies Used:</h4>
-The website is hosted on GitHub Pages. Projects of this type are typically built using standard web development technologies such as HTML, CSS, and JavaScript..</p>
-                        <a href="https://iamnithino.github.io/nithino/" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-2 inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
-                    </div>
-                    <!-- Project Item 2 -->
-                    <div class="text-left border-b-2 border-dashed border-gray-700 pb-8 last:border-none">
-                        <h3 class="text-3xl font-semibold text-white mb-2"> Personal Portfolio</h3>
-                        <p class="text-gray-400">The website at the provided URL is a portfolio for Nithin Reddy, a Full Stack Web Developer, UI/UX Enthusiast, Python Developer, and Data Analyst. The site describes his passion for building digital experiences, his experience working with startups and enterprises, and highlights his skills in Python, Generative AI, UI/UX design, and data analysis. The portfolio also includes links to download his resume and contact him for employment.</p>
-                        <a href="https://iamnithino.github.io/protofile/index.html" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-2 inline-flex items-center">
-                            View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
-                    </div>
+    <!-- Main projects section -->
+    <section id="projects" class="min-h-screen flex items-center justify-center py-32 px-4">
+        <div class="enhanced-card p-8 md:p-12 rounded-2xl shadow-2xl w-full max-w-4xl">
+            <h2 class="text-5xl md:text-6xl font-bold text-cyan-400 mb-12 text-center">My Projects</h2>
+            
+            <!-- Container for all project items -->
+            <div class="space-y-10">
+                
+                <!-- Project Item 1: Aura Light -->
+                <div class="text-left border-b-2 border-dashed border-gray-700 pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Aura Light</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Project:</strong> A product landing page designed for a minimalist smart lamp called "Aura Light."<br>
+                        <strong>Features:</strong> The landing page highlights the lamp's features, including its minimalist design, smart technology, and customizable lighting options. It includes sections for product details, customer testimonials, and a call-to-action to purchase the lamp.<br>
+                        <strong>Functionality:</strong> It includes sections for product features, multi-tiered pricing (Mini, Standard, Pro), and a contact form.
+                    </p>
+                    <a href="https://iamnithino.github.io/lunchproduct/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
                 </div>
+
+                <!-- Project Item 2: Our Gardens -->
+                <div class="text-left border-b-2 border-dashed border-gray-700 pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Our Gardens</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Project Description:</strong> The project is a website for a service called "OurGardens" under the main title "For Future." It provides an informational guide on how to create and maintain a garden, outlining a seven-step process and promoting a call to action to "Save Plants, Make Gardens."<br>
+                        <strong>Problem it Solves:</strong> The project aims to solve the problem of a lack of accessible and simple guidance for individuals who want to start gardening.<br>
+                        <strong>Technologies Used:</strong> The website is hosted on GitHub Pages. Projects of this type are typically built using standard web development technologies such as HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="https://iamnithino.github.io/nithino/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+                
+                <!-- Project Item 3: Smart-Tourism-Jharkhand -->
+                <div class="text-left border-b-2 border-dashed border-gray-700 pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Smart-Tourism-Jharkhand</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Project:</strong> A website concept for "Smart Tourism Jharkhand" designed to promote tourism by showcasing the region's natural beauty, including waterfalls, dams, and lakes.<br>
+                        <strong>Features:</strong> The website features sections for exploring tourist spots, planning trips, and booking accommodations.<br>
+                        <strong>Functionality:</strong> The site includes interactive maps, photo galleries, and travel itineraries to help users plan their visits effectively.
+                    </p>
+                    <a href="https://iamnithino.github.io/Smart-Tourism-Jharkhand/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Project Item 4: Personal Portfolio -->
+                <div class="text-left border-b-2 border-dashed border-gray-700 pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Personal Portfolio</h3>
+                    <p class="text-gray-400 leading-relaxed">The website at the provided URL is a portfolio for Nithin Reddy, a Full Stack Web Developer, UI/UX Enthusiast, Python Developer, and Data Analyst. The site describes his passion for building digital experiences, his experience working with startups and enterprises, and highlights his skills in Python, Generative AI, UI/UX design, and data analysis. The portfolio also includes links to download his resume and contact him for employment.</p>
+                    <a href="https://iamnithino.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+
+                <!-- Project Item 5: Python Sentiment Analyzer -->
+                <div class="text-left border-b-2 border-dashed border-gray-700 pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Python Sentiment Analyzer</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Project:</strong> Developed a Sentiment Analysis tool in Python to automatically classify text as positive, negative, or neutral.<br>
+                        <strong>Technology:</strong> Utilized Natural Language Processing (NLP) libraries such as NLTK or VADER (Valence Aware Dictionary and sEntiment Reasoner) to process and score the sentiment of user input.<br>
+                        <strong>Application:</strong> The tool can be used to analyze customer feedback, social media comments, or product reviews to gain insights into public opinion.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1SvWjw63mmU8j7kS4ffgiqc8oyIjSmFW9?usp=drive_links" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+                
+                <!-- Project Item 6: Python Price Tracker -->
+                <div class="text-left pb-10 last:border-none">
+                    <h3 class="text-3xl font-semibold text-white mb-3">Python Price Tracker</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        <strong>Project:</strong> Developed a "Price Tracer" application using Python to automatically monitor product prices from multiple e-commerce sites.<br>
+                        <strong>Core Functionality:</strong> Implemented web scraping (using BeautifulSoup, Scrapy, or Selenium) to extract real-time price data and store price history or send user alerts.<br>
+                        <strong>Key Feature:</strong> Created a system to send email/SMS notifications when a price drops below a user-defined threshold.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1nbqsGMJ2iFHTmuVc3pVsg7KLliL_B1K3?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-white transition-colors duration-300 mt-4 inline-flex items-center">
+                        View Project <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="py-6 text-center text-gray-500 text-sm">
         <p>&copy; 2025 Nithin Reddy. All Rights Reserved.</p>
     </footer>
 
-    </body>
-
-        </html>
+</body>
+</html>
