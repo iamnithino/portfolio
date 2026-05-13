@@ -25,9 +25,70 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #22d3ee;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Image Zoom Styling */
+        .zoomable-image {
+            cursor: zoom-in;
+            transition: opacity 0.3s ease;
+        }
+        .zoomable-image:hover {
+            opacity: 0.8;
+        }
+
+        /* Lightbox Overlay */
+        #lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: zoom-out;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #lightbox-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+        #lightbox-img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.3);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        #lightbox-overlay.active #lightbox-img {
+            transform: scale(1);
+        }
     </style>
 </head>
 <body class="antialiased">
+    <!-- Lightbox Overlay Structure -->
+    <div id="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Enlarged view">
+        <div class="absolute top-6 right-6 text-white text-3xl cursor-pointer">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
     <header class="header fixed top-0 left-0 w-full z-50 py-4 shadow-xl border-b border-gray-700">
         <nav class="container mx-auto flex justify-between items-center px-4 md:px-8">
             <h1 class="text-3xl font-bold text-gray-100 transition-transform duration-300 hover:scale-105">
